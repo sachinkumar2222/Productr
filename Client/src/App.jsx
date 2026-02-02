@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AuthLayout from './components/AuthLayout';
-import Login from './pages/Login';
-import OtpVerification from './pages/OtpVerification';
+import Login from './Pages/Login';
+import OtpVerification from './Pages/OtpVerification';
 import DashboardLayout from './components/DashboardLayout';
-import Home from './pages/Home';
-import Products from './pages/Products';
+import Home from './Pages/Home';
+import Products from './Pages/Products';
 
 function App() {
   return (

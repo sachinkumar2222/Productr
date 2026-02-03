@@ -42,9 +42,9 @@ CLOUDINARY_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_SECRET_KEY=your_api_secret
 
-# Email Configuration (Nodemailer with Gmail)
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_app_specific_password
+# Email Configuration (sendgrid with Gmail)
+SENDGRID_FROM_EMAIL=your_email@gmail.com
+SENDGRID_API_KEY=api_key
 ```
 
 ### Running the Server
@@ -93,3 +93,14 @@ The application will typically run on `http://localhost:5173` (check the termina
 2. Open your browser and navigate to the frontend URL.
 3. Login using your email to receive an OTP.
 4. Verify OTP to access the dashboard.
+
+
+## 🚀 Live Application
+
+- **Frontend (Vercel)**  
+  https://productr-two.vercel.app/
+
+- **Backend (Render)**  
+  https://productr-q876.onrender.com
+
+---

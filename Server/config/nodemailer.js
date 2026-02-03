@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
+    host: 'smtp.googlemail.com', // Alternative alias that sometimes bypasses blocks
     port: 465,
     secure: true,
     auth: {
@@ -15,9 +15,9 @@ const transporter = nodemailer.createTransport({
     family: 4, // Force IPv4
     logger: true, // Log to console
     debug: true, // Include debug info
-    connectionTimeout: 10000, // 10 seconds
-    greetingTimeout: 5000,
-    socketTimeout: 10000
+    connectionTimeout: 30000, // 30 seconds
+    greetingTimeout: 15000,
+    socketTimeout: 30000
 });
 
 // Verify connection configuration

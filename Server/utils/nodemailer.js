@@ -6,7 +6,7 @@ const sendOtpEmail = async (email, otp) => {
         const htmlTemplate = getOtpEmailTemplate(otp);
 
         const mailOptions = {
-            from: `"Productr Support" <${process.env.EMAIL_USER}>`,
+            from: `"Productr Support" <${process.env.SENDGRID_FROM_EMAIL}>`,
             to: email,
             subject: 'Your Productr Login Verification Code',
             html: htmlTemplate

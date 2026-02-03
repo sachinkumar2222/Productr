@@ -1,5 +1,5 @@
 const User = require('../models/User');
-const sendOtpEmail = require('../utils/nodemailer');
+const sendOtpEmail = require('../utils/sendOtpEmail');
 const generateToken = require('../utils/generateToken');
 
 // @desc    Request OTP (Login/Signup)
